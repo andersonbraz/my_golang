@@ -1,0 +1,8 @@
+FROM golang:alpine
+RUN mkdir /app 
+ADD simple.go /app/
+WORKDIR /app 
+RUN go build -o simple .
+RUN adduser -S -D -H -h /app andersonbraz
+USER andersonbraz
+CMD ["./simple"]

@@ -1,0 +1,11 @@
+FROM golang:alpine as builder
+RUN mkdir /build 
+ADD simple.go /build/
+WORKDIR /build 
+RUN go build -o simple .
+FROM alpine
+RUN adduser -S -D -H -h /app andersonbraz
+USER andersonbraz
+COPY --from=builder /build/simple /app/
+WORKDIR /app
+CMD ["./simple"]
