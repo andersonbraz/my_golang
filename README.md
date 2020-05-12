@@ -1,6 +1,5 @@
 # Contêiner Mínimo com Golang
 
-
 ## Step 1
 
 Command to build
@@ -42,7 +41,6 @@ Command to run
 ```shell
 docker run -d -p 8030:8030 --name example-golang hello-golang-json:1.0 
 ```
-
 
 ## Referências
 
