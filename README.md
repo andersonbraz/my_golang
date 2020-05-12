@@ -9,7 +9,7 @@ Command to build
 docker build -t hello-golang-simple:1.0 . -f Dockerfile.simple
 ```
 
-Commando to run
+Command to run
 
 ```shell
 docker run -it hello-golang-simple:1.0
@@ -23,7 +23,7 @@ Command to build
 docker build -t hello-golang-simple:1.1 . -f Dockerfile.multi
 ```
 
-Commando to run
+Command to run
 
 ```shell
 docker run -it hello-golang-simple:1.1
@@ -37,7 +37,7 @@ Command to build
 docker build -t hello-golang-json:1.0 . -f Dockerfile.final
 ```
 
-Commando to run
+Command to run
 
 ```shell
 docker run -d -p 8030:8030 --name example-golang hello-golang-json:1.0 
